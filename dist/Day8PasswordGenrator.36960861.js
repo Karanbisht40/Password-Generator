@@ -727,11 +727,91 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _s = $RefreshSig$();
+function PasswordGenerator() {
+    _s();
+    const [Password, setPassword] = (0, _react.useState)("ABIDHDKKD");
+    const [Length, setLength] = (0, _react.useState)(10);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    "Password is: ",
+                    Password
+                ]
+            }, void 0, true, {
+                fileName: "main.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "second",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "range",
+                        min: 5,
+                        max: 50
+                    }, void 0, false, {
+                        fileName: "main.js",
+                        lineNumber: 14,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Length is:",
+                            Length
+                        ]
+                    }, void 0, true, {
+                        fileName: "main.js",
+                        lineNumber: 15,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox"
+                    }, void 0, false, {
+                        fileName: "main.js",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: "Number"
+                    }, void 0, false, {
+                        fileName: "main.js",
+                        lineNumber: 18,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox"
+                    }, void 0, false, {
+                        fileName: "main.js",
+                        lineNumber: 20,
+                        columnNumber: 20
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: " Character"
+                    }, void 0, false, {
+                        fileName: "main.js",
+                        lineNumber: 21,
+                        columnNumber: 20
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "main.js",
+                lineNumber: 13,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(PasswordGenerator, "Sf6NFEgccIiclee3bb4xSjXqDxU=");
+_c = PasswordGenerator;
 (0, _clientDefault.default).createRoot(document.getElementById('root')).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PasswordGenerator, {}, void 0, false, {
     fileName: "main.js",
-    lineNumber: 9,
+    lineNumber: 30,
     columnNumber: 61
 }, undefined));
+var _c;
+$RefreshReg$(_c, "PasswordGenerator");
 
   $parcel$ReactRefreshHelpers$869f.postlude(module);
 } finally {
