@@ -5,19 +5,21 @@ import ReactDOM from "react-dom/client";
 function PasswordGenerator() {
 
     const [Password, setPassword] = useState("ABIDHDKKD");
-   const [Length, setLength] = useState(10);
+   const [length, setLength] = useState(10);
+   const [numberChanged, setnumberChanged] = useState(false);
+   const [charChanged, setcharChanged] = useState(false);
 
-    return (
-        <>
+    return ( 
+        <> 
             <h1>Password is: {Password}</h1>
             <div className="second">
-                <input type="range" min={5} max={50}></input>
-                <label>Length is:{Length}</label>
+                <input type="range" min={5} max={50} value={length} onChange={(e)=>setLength(e.target.value)}></input>
+                <label>Length({length})</label>
 
-                <input type="checkbox"></input>
+                <input type="checkbox" defaultChecked={numberChanged} onChange={()=> setnumberChanged(!numberChanged)}></input>
                 <label>Number</label>
                    
-                   <input type="checkbox"></input>
+                   <input type="checkbox" defaultChecked={charChanged} onChange={()=> setnumberChanged(!charChanged)}></input>
                    <label> Character</label>
 
             </div>
