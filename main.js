@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 
 
-
+//password generator 
 function PasswordGenerator() {
 
     const [Password, setPassword] = useState("ABIDHDKKD");
